@@ -1,0 +1,13 @@
+#profile-pic {
+    float: left;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+}
+
+main h1 {
+    clear: left;
+    color: #db3b26;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 18pt;
+}
