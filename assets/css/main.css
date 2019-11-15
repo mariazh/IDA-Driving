@@ -68,7 +68,10 @@ main {
 #container {
     margin: 4em;
     margin-top: 3em;
-    max-width: 80vw;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13pt;
 }
 
 aside {
