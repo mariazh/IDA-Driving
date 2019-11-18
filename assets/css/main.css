@@ -30,6 +30,15 @@ header {
     width: min-content;
 }
 
+#branding a {
+    text-decoration: none;
+    color: black;
+}
+
+#branding a:visited {
+    color: black;
+}
+
 #brand-subtitle {
     font-size: 20pt;
     font-weight: 500;
