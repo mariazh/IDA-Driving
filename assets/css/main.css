@@ -10,20 +10,21 @@ header {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 90vw;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: 10em;
 }
 
 #brading-supplement {
-    max-width: 30vw;
+    max-width: 50vw;
 }
 
 #brading-supplement img {
     width: 100%;
+    visibility: hidden;
 }
 
 #brand {
-    font-size: 30pt;
+    font-size: 40pt;
     margin: 0;
     text-transform: uppercase;
     width: min-content;
@@ -35,16 +36,21 @@ header {
     font-style: italic;
 }
 
-nav {
+nav > ul {
     border: 3px solid black;
     border-left: none;
     border-right: none;
     display: flex;
     justify-content: space-around;
     background-color: #bcb8b4;
+    margin: 0;
 }
 
-nav a {
+nav > ul > li {
+    padding: 0.5em;
+}
+
+nav > ul > li > a {
     padding: 0.5em;
     font-weight: 700;
     font-size: 14pt;
@@ -52,12 +58,52 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav > ul > li > a:hover {
     text-decoration: underline;
+    background-color: gray;
 }
 
-nav a:visited {
+nav > ul > li > a:visited {
     color: black;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav .subnavigation {
+    position: absolute;
+    padding: 8px;
+    margin-top: 8px;
+    background-color: #bcb8b4;
+    border: 3px solid black;
+    border-top: 0;
+    display: none;
+}
+
+nav > ul > li:hover > .subnavigation {
+    display: block;
+}
+
+nav .subnavigation li {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+nav .subnavigation a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 13pt;
+}
+
+nav .subnavigation li:hover {
+    background-color: gray;
+}
+
+nav .subnavigation li:hover a {
+    color: white;
 }
 
 main {
@@ -83,12 +129,17 @@ aside {
 aside h1 {
     color: #db3b26;
     text-transform: uppercase;
-    text-decoration: underline;
     margin-top: 0;
 }
 
 #map {
     width: 100%;
+}
+
+#social-media {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .color-red {
