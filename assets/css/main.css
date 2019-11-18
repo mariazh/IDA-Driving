@@ -116,12 +116,17 @@ main {
     margin-top: 1.5em;
     max-width: 60vw;
     margin-left: 10em;
-    margin-right: 10em;
+    margin-right: 5em;
     font-size: 13pt;
 }
 
 #container h2 {
     font-style: 18pt;
+    margin-bottom: 0;
+}
+
+#container p {
+    margin-top: 0;
 }
 
 aside {
@@ -165,4 +170,8 @@ aside h1 {
 
 .m-0 {
     margin: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }

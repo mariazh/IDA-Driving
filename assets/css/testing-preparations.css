@@ -1,0 +1,35 @@
+#videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#container ul {
+    margin: 0;
+    padding: 0;
+    width: 45%;
+}
+  
+#container li {
+    list-style: none;
+}
+#container li a {
+    border: 1px solid gray;
+    background: #f4f4f4;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    font: 600 1.1em 'Open Sans', sans-serif;
+    color: #282828;
+    text-shadow: 0 1px white;
+    display: block;
+    margin: 0;
+    padding: 10px 30px 10px 60px;
+    text-decoration: none;
+    position: relative;
+    transition: all 100ms;
+}
+#container li a:hover {
+    transform: rotate(-1deg) translateY(2px) scale(0.98, 0.99);
+    z-index: 1;
+    background: linear-gradient(to bottom, #ededed 0%, #ffffff 20%, #ffffff 80%, #ededed 100%);
+}
