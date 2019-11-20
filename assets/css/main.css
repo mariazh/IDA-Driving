@@ -11,16 +11,21 @@ header {
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
-    margin-left: 10em;
+    margin-left: 10vw;
+    overflow: hidden;
 }
 
 #brading-supplement {
     max-width: 50vw;
+    position: relative;
+    min-width: 45vw;
 }
 
 #brading-supplement img {
     width: 100%;
-    visibility: hidden;
+    position: absolute;
+    bottom: 30px;
+    right: 3vw;
 }
 
 #brand {
@@ -88,6 +93,7 @@ nav .subnavigation {
     border: 3px solid black;
     border-top: 0;
     display: none;
+    z-index: 500;
 }
 
 nav > ul > li:hover > .subnavigation {
@@ -105,6 +111,7 @@ nav .subnavigation a {
     text-decoration: none;
     padding: 3px;
     font-size: 13pt;
+    display: block;
 }
 
 nav .subnavigation li:hover {
@@ -124,9 +131,13 @@ main {
     margin: 4em;
     margin-top: 1.5em;
     max-width: 60vw;
-    margin-left: 10em;
+    margin-left: 10vw;
     margin-right: auto;
     font-size: 13pt;
+}
+
+#container h1 {
+    margin-top: 0;
 }
 
 #container h2 {
