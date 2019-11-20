@@ -154,6 +154,7 @@ aside {
     background-color: #bcb8b4;
     padding: 1em;
     padding-top: 1.5em;
+    overflow: hidden;
 }
 
 aside h1 {
