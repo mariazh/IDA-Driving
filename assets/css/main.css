@@ -1,46 +1,54 @@
 body {
     margin: 0;
-    background-color: #e2dad6;
+    background: linear-gradient(135deg, rgba(186,208,246,1) 0%, rgba(126,202,243,1) 42%, rgba(195,226,242,1) 100%);
     font-family: 'Open Sans', sans-serif;
 }
 
 header {
     display: flex;
-    margin-top: 2em;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 0;
+    padding-left: auto;
+    padding-right: auto;
     justify-content: space-between;
-    margin-left: 10vw;
+    padding-left: 10vw;
     overflow: hidden;
+}
+
+#branding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+#branding img {
+    width: 30%;
 }
 
 #brading-supplement {
     max-width: 50vw;
-    position: relative;
-    min-width: 45vw;
+    max-height: 350px;
+    margin-right: auto;
 }
 
-#brading-supplement img {
-    width: 100%;
-    position: absolute;
-    bottom: 30px;
-    right: 3vw;
+#wheel-img {
+    max-height: 350px;
 }
 
 #brand {
     font-size: 40pt;
     margin: 0;
     text-transform: uppercase;
-    width: min-content;
+    /* width: min-content; */
 }
 
-#branding a {
+header a {
     text-decoration: none;
     color: black;
 }
 
-#branding a:visited {
+header a:visited {
     color: black;
 }
 
@@ -56,8 +64,9 @@ nav > ul {
     border-right: none;
     display: flex;
     justify-content: space-around;
-    background-color: #bcb8b4;
+    background-color: #3c210e;
     margin: 0;
+    color: white;
 }
 
 nav > ul > li {
@@ -68,7 +77,7 @@ nav > ul > li > a {
     padding: 0.5em;
     font-weight: 700;
     font-size: 14pt;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -78,7 +87,7 @@ nav > ul > li > a:hover {
 }
 
 nav > ul > li > a:visited {
-    color: black;
+    color: white;
 }
 
 nav ul li {
@@ -151,10 +160,11 @@ main {
 
 aside {
     max-width: 20vw;
-    background-color: #bcb8b4;
+    background-color: #1B98D1;
     padding: 1em;
     padding-top: 1.5em;
     overflow: hidden;
+    color: white;
 }
 
 aside h1 {
