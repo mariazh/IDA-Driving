@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: linear-gradient(135deg, rgba(186,208,246,1) 0%, rgba(126,202,243,1) 42%, rgba(195,226,242,1) 100%);
+    background: rgba(186,208,246,1);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -64,7 +64,7 @@ nav > ul {
     border-right: none;
     display: flex;
     justify-content: space-around;
-    background-color: #3c210e;
+    background-color: #09337a;
     margin: 0;
     color: white;
 }
@@ -83,7 +83,7 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
     text-decoration: underline;
-    background-color: gray;
+    background-color: rgba(0,0,0,0.25);
 }
 
 nav > ul > li > a:visited {
@@ -98,7 +98,7 @@ nav .subnavigation {
     position: absolute;
     padding: 8px;
     margin-top: 8px;
-    background-color: #bcb8b4;
+    background-color: #09337a;
     border: 3px solid black;
     border-top: 0;
     display: none;
@@ -116,7 +116,7 @@ nav .subnavigation li {
 }
 
 nav .subnavigation a {
-    color: black;
+    color: silver;
     text-decoration: none;
     padding: 3px;
     font-size: 13pt;
@@ -124,7 +124,7 @@ nav .subnavigation a {
 }
 
 nav .subnavigation li:hover {
-    background-color: gray;
+    background-color: rgba(0,0,0,0.25);
 }
 
 nav .subnavigation li:hover a {
@@ -140,9 +140,13 @@ main {
     margin: 4em;
     margin-top: 1.5em;
     max-width: 60vw;
+    min-width: 60vw;
     margin-left: 10vw;
     margin-right: auto;
     font-size: 13pt;
+    background: #FFFFFF;
+    padding: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 #container h1 {
@@ -160,11 +164,12 @@ main {
 
 aside {
     max-width: 20vw;
-    background-color: #1B98D1;
+    background-color: #09337a;
     padding: 1em;
     padding-top: 1.5em;
     overflow: hidden;
-    color: white;
+    color: silver;
+    box-shadow: -14px 0px 5px -2px rgba(0,0,0,0.75);
 }
 
 aside h1 {
@@ -179,8 +184,11 @@ aside h1 {
 
 #social-media {
     margin-top: 15px;
-    display: flex;
-    justify-content: space-evenly;
+    text-align: right;
+}
+
+#social-media img {
+    max-width: 40px;
 }
 
 .color-red {
