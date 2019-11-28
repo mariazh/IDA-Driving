@@ -172,6 +172,10 @@ aside {
     box-shadow: -14px 0px 5px -2px rgba(0,0,0,0.75);
 }
 
+aside a {
+    color: white;
+}
+
 aside h1 {
     color: #db3b26;
     text-transform: uppercase;
